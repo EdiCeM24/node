@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #345eda;
+    --color-nav: #FED093;
+    --color-lane: #EAD000;
+    --color-niv: #EAD;
+    --color-ink: #DA0027;
+    --color-klone: #aaa;
+    --color-deft: #054178;
+    --color-net: #231;
+    --color-dalk: #121233;
+    --color-venis: #eb5468;
+    --color-cornis: #eb5;
+    --color-silver: #ffffff;
+    --color-nat: #000000;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /*background: var(--color-nat);*/
+}
+.container {
+    padding: 20px;
+}
+header {
+    grid-area: header;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+header a {
+    color: var(--color-silver);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 7px;
+    font-weight: 600;
+}
+.cart-posit {
+    position: relative;
+}
+.cart-posit .quantity {
+    color: var(--color-silver);
+    background: var(--color-ink);
+    margin-top: -20px;
+    left: 30px;
+    padding: 5px 7px;
+    border-radius: 10px;
+    position: absolute;
+}
+.form-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10%;
+}
+#search {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    text-align: center;
+}
+#search:hover {
+    border-color: var(--color-ink);
+}
+#button {
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 18px;
+    color: var(--color-silver);
+    border: 1px solid var(--color-lane);
+}
+#button:hover {
+    background: var(--color-venis);
+    color: var(--color-klone);
+    border: 1px solid var(--color-ink);
+}
+/*End of header */
+.container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;  
+}
+
+
+
+/*Footer*/
