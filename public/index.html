@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node JS Experiment</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="brand">
-               <img src="images/favicon4.ico.ico" alt="Logo"> 
-               <a href="/#/edi">Edi_Mars</a> 
-            </div>
-            <div class="form-search">
-                <form action="" method="get">
-                    <input type="text" id="search" name="search" placeholder="Search">
-                    <button type="submit" id="button" name="button">Search</button>
-                </form>
-            </div>    
-            <div class="">
-                <a class="/#/sing-in">Sign In</a>
-            </div>
-            <div class="cart-posit">
-                <a class="/#/cart">Cart</a>
-                <span class="quantity">0</span>
-            </div>
-        </header>
-        <main>
-            <div>
-               <h1>Product Catalog</h1>
-            </div>
-        </main>
-        <footer>
-            <div class="">
-                All rights reserve @<script>document.write(new Date().getFullYear());</script> 
-            </div>
-        </footer>
-    </div>
-    <script src="app.js"></script>
-</body>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Node JS Experiment</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <div class="container">
+           <header>
+                <div class="brand">
+                    <img src="images/favicon4.ico.ico" alt="Logo"/> 
+                    <a href="#">Edi_Mars</a> 
+                </div>
+                <div class="content">
+                    <div class="dropdown">
+                        <button type="button" class="dropbtn">Menu<i class="fa-solid fa-list"></i></button>
+                        <div class="dropdown-content">
+                            <a href="https://twitter.com/edi_cem24">Twitter</a>
+                            <a href="https:/facebook.com/edidiong cletus marcus">Facebook</a>
+                            <a href="https://github.com/EdiCeM24">github</a>
+                            <a href="https://linkedin.com/in/cletus-marcus/">Linkedin</a>
+                            <a href="https://edi_mars.com">Edi_Mars</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="form-search">
+                    <form action="" method="get">
+                        <input type="text" id="search" name="search" placeholder="Search">
+                        <button type="submit" id="button" name="button">Search</button>
+                    </form>
+                </div>    
+                <div class="">
+                    <a href="/#/sing-in">Sign In</a>
+                </div>
+                <div class="cart-posit">
+                    <a href="/#/cart">Cart</a>
+                    <span class="quantity">0</span>
+                </div>
+            </header>
+           <main>
+                <div class="main">
+                <h1>Product Catalog</h1>
+                <div class="product-box-1" id="productList"></div>
+                </div>
+                <section class="product-box">
+                    <div class="related-products" id="related-products"></div>
+                </section>
+           </main>
+           <footer>
+                <div class="footer-contents">
+                    <div class="">
+                        <h2>Heading 1</h2>
+                        <a href="#">Link 1</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 2</h2>
+                        <a href="#">Link 2</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 3</h2>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 4</h2>
+                        <a href="#">Link 4</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 5</h2>
+                        <a href="#">Link 5</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 6</h2>
+                        <a href="#">Link 6</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 7</h2>
+                        <a href="#">Link 7</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 8</h2>
+                        <a href="#">Link 8</a>
+                    </div>
+                    <div class="">
+                        <h2>Heading 9</h2>
+                        <a href="#">Link 9</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>All rights reserve @</p><script>document.write(new Date().getFullYear());</script> 
+                    <p>&copy;</p> <a href="#">Edi_Mars</a> 
+
+                    <div class="links-web">
+                        <p>Developed and designed by <a href="#">Edi_CeM24</a></p>
+                    </div>
+                    <div class="links-contents">
+                        <div class="dropdown-content-web">
+                            <a href="#">Github</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">WhatsApp</a>
+                          </div> 
+                    </div>
+                </div>
+           </footer>
+       </div>
+        <script src="app.js"></script>
+    </body>
 </html>
